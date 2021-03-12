@@ -1,6 +1,3 @@
-import unittest
-
-
 class Chain:
     def __init__(self, string):
         lines = string.splitlines()
