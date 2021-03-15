@@ -30,7 +30,7 @@ class Chain:
             break
         return result
 
-    def _make_changeable(self, rank: int):
+    def _make_changeable(self, rank: int) -> None:
         # turn on n+1
         if not self._state[rank + 1]:
             self._change(rank + 1)
