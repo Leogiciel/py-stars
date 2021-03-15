@@ -16,9 +16,9 @@ class MyTest(unittest.TestCase):
         self.assertTrue(self.chain.can_change_rank(10))
 
     def test_change(self):
-        self.assertFalse(self.chain._state[10])  # last char
-        self.chain._change(10)
-        self.assertTrue(self.chain._state[10])
+        self.assertFalse(self.chain._state[10]) # pylint: disable=W0212
+        self.chain._change(10) # pylint: disable=W0212
+        self.assertTrue(self.chain._state[10]) # pylint: disable=W0212
 
     def test_worker(self):
         self.assertEqual(star_worker.compute('1101\n0100'), 2)
