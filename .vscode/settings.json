@@ -1,7 +1,6 @@
 {
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.languageServer": "Pylance",
+    "python.languageServer": "Microsoft",
     "python.analysis.diagnosticMode": "workspace",
     "python.analysis.typeCheckingMode": "strict",
     "python.pythonPath": ".venv\\Scripts\\python.exe",
@@ -12,7 +11,21 @@
         "-p",
         "main.py"
     ],
-    "python.testing.pytestEnabled": false,
-    "python.testing.nosetestsEnabled": false,
-    "python.testing.unittestEnabled": true
+    "python.testing.unittestEnabled": true,
+    "python.linting.mypyEnabled": true,
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "88"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "python.linting.mypyArgs": [
+        "--follow-imports=silent",
+        "--show-column-numbers"
+    ]
 }
