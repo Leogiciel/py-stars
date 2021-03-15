@@ -10,7 +10,7 @@ class MyTest(unittest.TestCase):
         self.assertTrue(chain.need_to_change(1))
         self.assertFalse(chain.can_change_rank(1))
         self.assertTrue(chain.can_change_rank(10))
-        self.assertFalse(chain._state[10]) # last char
+        self.assertFalse(chain._state[10])  # last char
         self.assertFalse((chain.can_change_rank(9)))
         self.assertTrue((chain.can_change_rank(10)))
         chain._change(10)
@@ -23,4 +23,3 @@ class MyTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-

@@ -1,10 +1,7 @@
 from chain import Chain
 
 
-def compute(arg):
-    # check argument type
-    if type(arg) is not str:
-        raise ValueError(f'Argument must be a string, not {type(arg)}')
+def compute(arg: str) -> int:
     lines = arg.splitlines()
     # check lines
     if len(lines) != 2:
@@ -23,7 +20,7 @@ def compute(arg):
     return chain.compute()
 
 
-def check_chain(chain):
+def check_chain(chain: str) -> bool:
     result = True
     i = 0
     while result and i < len(chain):
