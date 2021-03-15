@@ -39,7 +39,7 @@ This file can be run. It executes unit tests on given functional requirements.
 
 ### star_worker.py ###
 
-This module can be used from any python program. 
+This module can be used from any python program.
 It receives the argument as a string, encapsulates args parsing, then raise Exceptions or call the class Chain to compute the result.
 
 ## Changelog ##
