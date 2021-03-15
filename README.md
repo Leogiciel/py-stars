@@ -43,6 +43,7 @@ It receives the argument as a string, encapsulates args parsing, then raise Exce
 ## Changelog ##
 
 Exceptions raised on invalid datas received.
+Typing hints.
 
 ## TODO ##
 
