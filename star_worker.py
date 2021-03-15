@@ -13,6 +13,8 @@ def compute(arg):
     second = lines[1]
     if len(first) != len(second):
         raise ValueError('Both chains must have the same length')
+    elif len(first) < 1 or len(first) > 25:
+        raise (ValueError('Chains length must be between 1 and 25'))
     # check lines values
     check_chain(first)
     check_chain(second)
