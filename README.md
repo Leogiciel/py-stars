@@ -1,6 +1,9 @@
 # py-stars #
 
-[![GitHub Super-Linter](https://github.com/Leogiciel/py-stars/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![Super-Linter](https://github.com/Leogiciel/py-stars/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[super-linter-url]: https://github.com/ahmadnassri/node-glob-promise/actions?query=workflow%3Asuper-linter
+[super-linter-img]: https://github.com/ahmadnassri/node-glob-promise/workflows/super-linter/badge.svg
+![example branch parameter](https://github.com/github/docs/actions/workflows/linter.yml/badge.svg?branch=dev)
 
 ## Description ##
 
