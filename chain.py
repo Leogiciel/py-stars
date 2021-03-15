@@ -8,6 +8,7 @@ from typing import List
 
 class Chain:
     """Representation of the star lights chain"""
+
     def __init__(self, start: str, target: str) -> None:
         # map to bool arrays
         self._state: List[bool] = [ele == "1" for ele in list(start)]
@@ -50,13 +51,13 @@ class Chain:
         if rank == self.__length - 1:
             return True
         # cannot switch if n+1 is off
-        if not self._state[rank+1]:
+        if not self._state[rank + 1]:
             return False
         result = True
         # inspect n+2...N
         while result:
             for i in range(self.__length - rank - 1):
-                result &= not self._state[rank+i]
+                result &= not self._state[rank + i]
             break
         return result
 
