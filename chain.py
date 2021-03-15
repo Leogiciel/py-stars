@@ -1,10 +1,10 @@
 class Chain:
     def __init__(self, start: str, target: str) -> None:
         # map to bool arrays
-        self._state = [ele == "1" for ele in list(start)]
-        self.__target = [ele == "1" for ele in list(target)]
-        self.__length = len(self._state)
-        self.__counter = 0
+        self._state: [bool] = [ele == "1" for ele in list(start)]
+        self.__target: [bool] = [ele == "1" for ele in list(target)]
+        self.__length: int = len(self._state)
+        self.__counter: int = 0
 
     def need_to_change(self, rank: int) -> bool:
         return self._state[rank] != self.__target[rank]
