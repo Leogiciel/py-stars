@@ -12,13 +12,13 @@ Computes the minimum moves to pass from start state to the target one following 
 *Example :*
 
 **Input**
-````
+````lang-txt
 101010
 010101
 ````
 
 **Output**
-````
+````lang-txt
 26
 ````
 
@@ -27,7 +27,7 @@ Computes the minimum moves to pass from start state to the target one following 
 ### Calling script ###
 
 A simple script "star_script.py" can be called in a console :
-````
+````lang-txt
 C:\Users\Leogiciel\Peacock\py-stars> python star_script.py '11001001000
 >> 10000110011'
 877
