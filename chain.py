@@ -1,5 +1,5 @@
 class Chain:
-    def __init__(self, start: str, target: str):
+    def __init__(self, start: str, target: str) -> None:
         # map to bool arrays
         self._state = [ele == "1" for ele in list(start)]
         self.__target = [ele == "1" for ele in list(target)]
@@ -9,7 +9,7 @@ class Chain:
     def need_to_change(self, rank: int) -> bool:
         return self._state[rank] != self.__target[rank]
 
-    def _change(self, rank: int):
+    def _change(self, rank: int) -> None:
         if not self.can_change_rank(rank):
             self._make_changeable(rank)
         self._state[rank] = not self._state[rank]
