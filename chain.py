@@ -39,7 +39,7 @@ class Chain:
             if self._state[rank + 2 + i]:
                 self._change(rank + 2 + i)
 
-    def compute(self) -> bool:
+    def compute(self) -> int:
         for i in range(self.__length):
             if self.need_to_change(i):
                 self._change(i)

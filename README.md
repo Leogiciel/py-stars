@@ -33,7 +33,7 @@ C:\Users\Leogiciel\Peacock\py-stars> python star_script.py '11001001000
 
 ### main.py ###
 
-This file can be runned. It executes unit tests on given functional requirements.
+This file can be run. It executes unit tests on given functional requirements.
 
 ### star_worker.py ###
 
