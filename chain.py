@@ -1,8 +1,11 @@
+from typing import List
+
+
 class Chain:
     def __init__(self, start: str, target: str) -> None:
         # map to bool arrays
-        self._state: [bool] = [ele == "1" for ele in list(start)]
-        self.__target: [bool] = [ele == "1" for ele in list(target)]
+        self._state: List[bool] = [ele == "1" for ele in list(start)]
+        self.__target: List[bool] = [ele == "1" for ele in list(target)]
         self.__length: int = len(self._state)
         self.__counter: int = 0
 
