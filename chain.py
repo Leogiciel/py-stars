@@ -55,10 +55,10 @@ class Chain:
             return False
         result = True
         # inspect n+2...N
-        while result:
-            for i in range(self.__length - rank - 1):
-                result &= not self._state[rank + i]
-            break
+        i = 0
+        while result and i < self.__length - rank - 1:
+            result &= not self._state[rank + i]
+            i += 1
         return result
 
     def _make_changeable(self, rank: int) -> None:
