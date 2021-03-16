@@ -4,7 +4,7 @@
 # Unit tests GitHub Actions #
 #############################
 #############################
-name: Unit test
+name: Unit tests
 
 #############################
 # Start the job on all push #
@@ -52,5 +52,5 @@ jobs:
       ##########################
       ##### Run unit tests #####
       ##########################
-      - name: Run tests with unittest
+      - name: Unit tests
         run: python -m unittest main.py
